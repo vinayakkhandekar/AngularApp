@@ -1,0 +1,37 @@
+<h1>Singers</h1>
+<div *ngFor="let element of S">
+    <table>
+    <td class="A">Song</td>
+   <td>{{element.Song}}</td>
+
+   <td class="A">Singer</td>
+<td>{{element.singer}}</td>
+
+<td class="A">Release</td>
+<td> {{element.release}}</td>
+
+<td class="A">Totalsongs</td>
+<td>{{element.totalsongs}}</td>
+   
+</table>
+</div>
+<h2>Singers   more than 50 song</h2>
+<div *ngFor="let element of S">
+    <div *ngIf="element.totalsongs>50">
+     <table>
+        
+    <tr>
+        <td class="A">Song</td> 
+        <td>   {{element.Song}} </td>
+
+        <td class="A">Singer</td>
+     <td>{{element.singer}}</td> 
+
+     <td class="A">Release</td>
+ <td>  {{element.release}}</td> 
+
+ <td class="A">Totalsongs</td>
+ <td>{{element.totalsongs}}</td> 
+ </tr>
+ </table>
+    </div>
